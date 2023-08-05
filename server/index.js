@@ -3,8 +3,8 @@ const HOSTNAME = '192.168.1.17';
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-app.get("/poruka", (req, res) => {
-  res.json({ message: "ovo pise gore"+req });
+app.get("/api", (req, res) => {
+  res.json({ message: "temperatura iznosi" , temp: 20});
 });
 
 app.get("/", (req, res) => {
